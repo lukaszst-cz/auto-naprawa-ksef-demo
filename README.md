@@ -13,4 +13,8 @@ Demonstracyjna strona warsztatu samochodowego wraz z panelem obsługi dokumentó
 
 Otwórz `index.html` w przeglądarce.
 
+## Działająca prezentacja
+
+[Otwórz Auto Naprawa KSeF Demo](https://lukaszst-cz.github.io/auto-naprawa-ksef-demo/)
+
 Projekt jest częścią głównego [portfolio operacyjnego](https://github.com/lukaszst-cz/operations-office-portfolio).
