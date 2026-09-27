@@ -28,6 +28,18 @@ Otwórz `index.html` w przeglądarce.
 Projekt jest częścią głównego [portfolio operacyjnego](https://github.com/lukaszst-cz/operations-office-portfolio).
 
 
+## Zakres symulacji KSeF
+
+Moduł faktur pokazuje przebieg od zamkniętego zlecenia do walidacji i przykładowego UPO, ale pozostaje wyłącznie demonstracją interfejsu i procesu.
+
+- nie łączy się z API Ministerstwa Finansów;
+- nie generuje produkcyjnego XML FA(3);
+- nie przechowuje certyfikatów ani danych uwierzytelniających;
+- przykładowy numer KSeF/UPO nie jest prawdziwym identyfikatorem;
+- przed wdrożeniem wymagane są aktualna walidacja struktury FA(3), bezpieczny backend i testy integracyjne z właściwym środowiskiem KSeF.
+
+Nazewnictwo KSeF 2.0 / FA(3) odpowiada aktualnemu modelowi systemu używanemu od 2026 r.
+
 ## Powiązany projekt
 
 WorkshopFlow 360 pokazuje pełny proces operacyjny warsztatu — od rezerwacji i diagnozy do wydania auta.
