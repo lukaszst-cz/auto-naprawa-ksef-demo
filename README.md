@@ -17,6 +17,14 @@ Otwórz `index.html` w przeglądarce.
 
 [Otwórz Auto Naprawa KSeF Demo](https://lukaszst-cz.github.io/auto-naprawa-ksef-demo/)
 
+## Szybki podgląd
+
+- [Strona warsztatu](https://lukaszst-cz.github.io/auto-naprawa-ksef-demo/)
+- [Portal klienta](https://lukaszst-cz.github.io/auto-naprawa-ksef-demo/portal/?role=client)
+- [Panel kierownika](https://lukaszst-cz.github.io/auto-naprawa-ksef-demo/portal/?role=manager)
+- [Faktury i symulacja KSeF](https://lukaszst-cz.github.io/auto-naprawa-ksef-demo/portal/faktury.html)
+- [Case study / zakres wdrożenia](https://lukaszst-cz.github.io/auto-naprawa-ksef-demo/case-study.html)
+
 Projekt jest częścią głównego [portfolio operacyjnego](https://github.com/lukaszst-cz/operations-office-portfolio).
 
 
@@ -25,3 +33,8 @@ Projekt jest częścią głównego [portfolio operacyjnego](https://github.com/l
 WorkshopFlow 360 pokazuje pełny proces operacyjny warsztatu — od rezerwacji i diagnozy do wydania auta.
 
 https://github.com/lukaszst-cz/workshopflow-360
+
+
+## Kontrola jakości
+
+GitHub Actions sprawdza składnię JavaScript oraz wszystkie lokalne odsyłacze i assety HTML przed publikacją strony.
