@@ -51,3 +51,11 @@ jobs:
               print("\n".join(missing))
               sys.exit(1)
           PY
+
+      - name: Check KSeF demo boundary
+        run: |
+          grep -Fq "SYMULACJA KSeF 2.0" portal/faktury.html
+          grep -Fq "NIE WYSYŁA DOKUMENTÓW DO MINISTERSTWA FINANSÓW" portal/faktury.html
+          grep -Fq "nie generuje produkcyjnego XML FA(3)" portal/faktury.html
+          grep -Fq "ksef.podatki.gov.pl" portal/faktury.html
+          grep -Fq "nie łączy się z API Ministerstwa Finansów" README.md
