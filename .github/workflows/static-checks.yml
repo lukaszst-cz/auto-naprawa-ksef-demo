@@ -1,0 +1,53 @@
+name: Static checks
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check JavaScript syntax
+        run: |
+          node --check portal/app.js
+          node --check portal/invoice.js
+      - name: Check local HTML assets
+        run: |
+          python - <<'PY'
+          import pathlib, re, sys
+          root = pathlib.Path(".").resolve()
+          missing = []
+          attr = re.compile(r'(?:href|src)=["\']([^"\']+)["\']', re.I)
+
+          for html in root.rglob("*.html"):
+              text = html.read_text(encoding="utf-8")
+              for value in attr.findall(text):
+                  if value.startswith(("http://","https://","mailto:","tel:","#","javascript:","data:")):
+                      continue
+                  clean = value.split("#", 1)[0].split("?", 1)[0]
+                  if not clean:
+                      continue
+                  target = (html.parent / clean).resolve()
+                  try:
+                      target.relative_to(root)
+                  except ValueError:
+                      missing.append(f"{html}: {value} (outside repository)")
+                      continue
+                  if not target.exists():
+                      missing.append(f"{html}: {value}")
+
+          if missing:
+              print("Missing local assets/links:")
+              print("\n".join(missing))
+              sys.exit(1)
+          PY

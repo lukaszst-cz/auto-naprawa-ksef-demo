@@ -18,3 +18,10 @@ Otwórz `index.html` w przeglądarce.
 [Otwórz Auto Naprawa KSeF Demo](https://lukaszst-cz.github.io/auto-naprawa-ksef-demo/)
 
 Projekt jest częścią głównego [portfolio operacyjnego](https://github.com/lukaszst-cz/operations-office-portfolio).
+
+
+## Powiązany projekt
+
+WorkshopFlow 360 pokazuje pełny proces operacyjny warsztatu — od rezerwacji i diagnozy do wydania auta.
+
+https://github.com/lukaszst-cz/workshopflow-360
