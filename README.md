@@ -50,3 +50,13 @@ https://github.com/lukaszst-cz/workshopflow-360
 ## Kontrola jakości
 
 GitHub Actions sprawdza składnię JavaScript oraz wszystkie lokalne odsyłacze i assety HTML przed publikacją strony.
+
+---
+
+## ☕ Wsparcie / Support
+
+Jeśli ten projekt Ci się podoba lub jest dla Ciebie przydatny, możesz dobrowolnie wesprzeć jego dalszy rozwój.  
+If you like this project or find it useful, you can support its further development.
+
+**[☕ Postaw Naleśnikowi++ kawę / Buy Me a Coffee](https://buymeacoffee.com/nalesnik_plus_plus)**
+
